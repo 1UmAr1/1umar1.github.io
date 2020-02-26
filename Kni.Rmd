@@ -1,0 +1,30 @@
+---
+title: "Coursera week 2"
+author: "Umer Ayoub"
+date: "2/26/2020"
+output: html_document
+runtime: shiny
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##  First Leaflet Map
+Create a leaflet map object.
+```{r cars}
+library(leaflet)
+map <- leaflet() %>% addTiles()
+```
+
+
+Add the marker to the map and display the map.
+```{r}
+
+map %>%
+   addTiles() %>%
+   addMarkers(lat=34.2868, lng=74.4624, popup="Sopore Kashmir") %>%
+   addMarkers(lat=34.083656,lng=	74.7973, popup="kashmir")
+
+  
+map
+```
